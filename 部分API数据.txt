@@ -1,0 +1,6 @@
+所有的API都需要传入协议头“x-role-token: ”，否则重定向到网页游戏或反馈“检测到登录信息发生变更，请刷新后重试”。可以自行抓包获取或自己逆向yj的网页来生成正确值（高级用户）。返回值皆为JSON数据
+https://ak.hypergryph.com/activity/experimental-plot/role/info 获取该COOKIE对应的博士信息，GET请求
+https://ak.hypergryph.com/activity/experimental-plot/api/game/sync 获取该COOKIE对应的博士的农场信息，POST请求（不需要传入任何值）
+https://ak.hypergryph.com/activity/experimental-plot/api/game/shop 获取商店信息（大部分情况用于获取收购价和购入种子价格），GET请求
+https://ak.hypergryph.com/activity/experimental-plot/api/game/player 获取他人的农场信息，POST请求，传入参数uid（如uid=79895046来请求“海猫络合物#2728”的数据）
+https://ak.hypergryph.com/activity/experimental-plot/api/game/harvest 收获植物（好像也可以用来偷其他人的菜），POST请求，传入参数（landID=第几块地&uid=其他人的？自己的不需要此参数）
